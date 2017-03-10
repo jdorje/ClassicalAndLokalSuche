@@ -1,0 +1,143 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage,amsmath}
+
+% --- -----------------------------------------------------------------
+% --- Document-specific definitions.
+% --- -----------------------------------------------------------------
+\newtheorem{definition}{Definition}
+
+\newcommand{\concat}{{\,\|\,}}
+\newcommand{\bits}{\{0,1\}}
+
+% --- -----------------------------------------------------------------
+% --- The document starts here.
+% --- -----------------------------------------------------------------
+\begin{document}
+\sloppy
+
+\noindent Rutgers University\\
+CS440: Introduction to Artificial Intelligence, Spring 2017\\
+Kostas Bekris\\
+
+\begin{center}
+\LARGE{\textbf{Homework 2: James Carroll and Joel Carrillo}}\\
+\large{\textbf{\emph{Classical, Local, and Adversarial Search; Constraint Satisfaction and Logic}}}
+\end{center}
+
+\vspace{.1in}
+
+\begin{enumerate}
+
+\item Problem 1
+\begin{enumerate}
+\item (Program results)
+\end{enumerate}
+
+\item Problem 2
+\begin{enumerate}
+\item Node values:
+\begin{enumerate}
+\item MIN(H-O): H = 8, I = 5, J = 6, K = 6, L = 18, M = 22, N = 8, O = 17
+\item MAX(D-G): D = 8, E = 6, F = 22, G = 17
+\item MIN(B-C): B = 6, C = 17
+\item MAX(A): A = 17
+\end{enumerate}
+\item PRUNED: 16, 15
+\begin{enumerate}
+\item $H(8, \alpha= -\infty,\beta = 8)$, $I(5, \alpha = 8 , \beta = 5)$, $J(6, \alpha= -\infty,\beta = 6)$, $K(6, \alpha = 6, \beta = 6)$, $L(18, \alpha = 6, \beta = +\infty)$, $M(22, \alpha = 6, \beta = +\infty)$, $N(8, \alpha = 6, \beta = +\infty)$, $O(17, \alpha = 6, \beta = +\infty)$
+\item $D(8, \alpha = 8, \beta= + \infty)$, $E(6, \alpha = 6, \beta = 8)$, $F(22, \alpha = 6, \beta = +\infty)$, $G(17, \alpha = 6, \beta = +\infty)$
+\item $B(6, \alpha = -\infty, \beta = 6)$, $C(17, \alpha = 6 , \beta = +\infty)$
+\item $A(17, \alpha = 17, \beta = 6)$
+\end{enumerate}
+\item Both the MAX players in either variation of minimax choose the action 17.
+\begin{enumerate}
+\item In alpha-beta pruning, the benefit is present in that once an action is found to be smaller than some given alpha value in a node of the same level, there no longer needs to be any further exploration. Even if there is some value lower further along in the child nodes, it will certainly not be considered for selection. Ultimately, because of the persistence of alpha and beta values, the maximum agent will always select its highest values possible, while the minimum agent will select the lowest values possible.
+\end{enumerate}
+\item A
+\item Due to how the max selection works, certain values on the bottommost nodes will never be selected. For example, the left branch of I, 5, will never be considered as it will never make it past the larger H values, 8 or 99. The 6 attached to J and K will never make it past E, as the lowest possible value for D is 8. From this, we can see that values 5, 6, 8, 18 will never reach the top node, A.
+\begin{enumerate}
+\item Possible values for each node:
+\begin{enumerate}
+\item H = 99/8, I = 5/16, J = 83/6, K = 6/15, L = 18, M = 22/28, N = 99/8, O = 90/17
+\item D = 8/16/99, E = 6/15/83, F = 22/28, G = 17/90/99
+\item B = 8/16/83/99, C = 22/28/90/99
+\item A = 22/28/83/90/99
+\end{enumerate}
+\item Alpha-beta pruning is \textit{not} possible for this due to the fact that there is no certainty that MIN will play optimally - it certainly would not work for the original tree.
+\end{enumerate}
+\end{enumerate}
+
+\item Problem 3
+\begin{enumerate}
+\item Definitions
+\begin{enumerate}
+\item The set of variables are the 81 numbers: $\{n_{1,1}, \ldots, n_{1,9}, \ldots, n_{9, 1}, \ldots, n_{9, 9}\}$
+\item Domain of possible values for each is $\{1, 2, 3, 4, 5, 7, 8, 9\}$
+\item Constraints:
+\begin{enumerate}
+\item You must use the numbers already assigned.
+\item $Alldiff( n_{1,1}, \ldots, n_{1, 9} )$ etc for all rows
+\item $Alldiff( n_{1,1}, \ldots, n_{9, 1} )$ etc for all columns
+\item Each of the 3x3 boxes must contain all the digits
+\end{enumerate}
+\end{enumerate}
+\item Incremental formulation
+\begin{enumerate}
+\item Definitions
+\begin{enumerate}
+\item Start state: The starting board
+\item Successor function:
+\item Goal test:
+\item Path cost function:
+\item Heuristic: degree or MRV and why?
+\item Branching factor:
+\item Solution depth:
+\item Maximum depth:
+\item State space size:
+\end{enumerate}
+\end{enumerate}
+\item ?
+\item ?
+\end{enumerate}
+
+\item Problem 4
+\begin{enumerate}
+\item $((A \land K) \to D) \land (L \to K) \land (L \to W) \land (W \to !A)$
+\begin{enumerate}
+\item D: Superman is defeated
+\item A: Superman is facing an opponent alone
+\item K: Superman's opponent is carrying Kryptonite
+\item L: Batman coordinates with Lex Luther
+\item W: Wonder Woman fights on the side of Superman
+\end{enumerate}
+\item $(!A \lor !K \lor D) \land (!L \lor K) \land (!L \lor W) \land (!W \lor !A)$
+\begin{enumerate}
+\item Given: $((A \land K) \to D) \land (L \to K) \land (L \to W) \land (W \to !A)$
+\item Definition of $\to$: $(!(A \land K) \lor D) \land (!L \lor K) \land (!L \lor W) \land (!W \lor !A)$
+\item DeMorgan's rule: $(!A \lor !K \lor D) \land (!L \lor K) \land (!L \lor W) \land (!W \lor !A)$
+\end{enumerate}
+\item Desired solution $!D$. Negate for proof by contradiction: so assume $D$.
+\begin{enumerate}
+\item $(D \lor !K)$ and $(K \lor !L)$ so $!L$. (Resolution rule)
+\item $(!L \lor W)$ and $(!W \lor !A)$ so $!A$ (Resolution rule)
+\item $!A$ and $((A \land K) \to D)$ so $D$ is false.
+\end{enumerate}
+\end{enumerate}
+
+\item Problem 5
+\begin{enumerate}
+\item (Program results)
+\end{enumerate}
+
+\item Problem 6
+\begin{enumerate}
+\item If both $h_{1}(n)$ and $h_2(n)$ are admissible, then their min is admissible, since $h(n) < h*(n)$. (Consistency?)
+\item With two admissible heuristics, their max is also admissible. (Consistency?)
+\item ?
+\item ?
+\end{enumerate}
+
+
+\end{enumerate}
+\end{document}
+
