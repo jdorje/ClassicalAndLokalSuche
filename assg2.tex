@@ -78,26 +78,34 @@ Kostas Bekris\\
 \item You must use the numbers already assigned.
 \item $Alldiff( n_{1,1}, \ldots, n_{1, 9} )$ etc for all rows
 \item $Alldiff( n_{1,1}, \ldots, n_{9, 1} )$ etc for all columns
-\item Each of the 3x3 boxes must contain all the digits
+\item Each of the 3x3 boxes must contain all the digits (none repeated).
 \end{enumerate}
 \end{enumerate}
 \item Incremental formulation
 \begin{enumerate}
 \item Definitions
 \begin{enumerate}
-\item Start state: The starting board
-\item Successor function:
-\item Goal test:
-\item Path cost function:
-\item Heuristic: degree or MRV and why?
-\item Branching factor:
-\item Solution depth:
-\item Maximum depth:
-\item State space size:
+\item Start state: The board with M numbers specified
+\item Successor function: Fill an unfilled cell
+\item Goal test: Are there no repeats of numbers within a row, col, or box? 
+\item Path cost function: How many times are the constraints violated? 
+\item Heuristic: Minimum remaining values (to be less likely to choose incorrectly)
+\item Branching factor: 9
+\item Solution depth: 81 - M
+\item Maximum depth: 81 - M
+\item State space size: $(81-M)!$
 \end{enumerate}
 \end{enumerate}
-\item ?
-\item ?
+\item An "easy" Sudoku problem allows little freedom once you have placed a number in a box, enabling Most-Restricted-Value to quickly end the game. A "hard" Sudoku problem allows more freedom.
+\item Steps for solving Sudoku using local search:
+\begin{enumerate}
+\item Fill each empty cell so that there are 9 of each digit in each 3x3 box.
+\item While constraints are not met:
+\item Swap two numbers (not fixed as part of M) within a box
+\item Heuristic is number of constraints violated in each row and column
+\item Keep the change if heuristic decreases; discard if it increases.
+\end{enumerate}
+\item It will work better than the best incremental search algorithm on easy problems, but worse on hard problems, because the heuristic in local search tolerates more gradual improvements than MRV in incremental search.
 \end{enumerate}
 
 \item Problem 4
