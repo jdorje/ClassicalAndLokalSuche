@@ -134,7 +134,13 @@ Kostas Bekris\\
 
 \item Problem 5
 \begin{enumerate}
-\item (Program results)
+\item Simulated annealing is useful for programs where there are a lot of variables: in this case, it becomes more useful as the number of cities increase in the Traveling Salesman problem. While the time increases for A* search would increase exponentially, with simulated annealing:
+\begin{enumerate}
+\item 10 cities: each run stopped at 1.8, 2.6, 3.6, 4.4, 5.1, 6.2, 7.9, 8.8, 9.5, 10.2, 11.1, 12.0, 13.6, 14.4, 15.2, 16.0, 17.3, 18.1, 19.0, 19.8, 21.3, 24.2, 27.0 seconds respectively. About 1 second each.
+\item 25 cities: took 43 seconds in total for 25 lists of 25 cities, so average 1.72 seconds.
+\item 50 cities: took 1 minute 9 seconds, so 2.76 seconds per solution.
+\item 100 cities: took 3 minutes 12 seconds, so 1.92 seconds per solution
+\end{enumerate}
 \end{enumerate}
 
 \item Problem 6
