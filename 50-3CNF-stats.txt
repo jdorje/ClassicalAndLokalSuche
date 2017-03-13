@@ -1,0 +1,201 @@
+Complete. Flips: 13405
+Time: 221.957751ms
+Complete. Flips: 36426
+Time: 103.138684ms
+Complete. Flips: 48793
+Time: 51.728947ms
+Complete. Flips: 53784
+Time: 22.286995ms
+Complete. Flips: 64449
+Time: 44.925595ms
+Complete. Flips: 86933
+Time: 93.873309ms
+Complete. Flips: 93726
+Time: 35.544071ms
+Complete. Flips: 98961
+Time: 24.203833ms
+Complete. Flips: 124709
+Time: 111.4409ms
+Complete. Flips: 175282
+Time: 202.051396ms
+Complete. Flips: 196015
+Time: 86.943141ms
+Complete. Flips: 197708
+Time: 7.713969ms
+Complete. Flips: 204506
+Time: 31.71079ms
+Complete. Flips: 216780
+Time: 53.965784ms
+Complete. Flips: 229285
+Time: 59.404595ms
+Complete. Flips: 230978
+Time: 8.592586ms
+Complete. Flips: 248018
+Time: 76.936236ms
+Complete. Flips: 251698
+Time: 18.550504ms
+Complete. Flips: 258889
+Time: 37.731526ms
+Complete. Flips: 288245
+Time: 139.546754ms
+Complete. Flips: 290141
+Time: 11.085819ms
+Complete. Flips: 305858
+Time: 75.61515ms
+Complete. Flips: 311236
+Time: 28.909409ms
+Complete. Flips: 314948
+Time: 17.04453ms
+Complete. Flips: 336539
+Time: 120.244053ms
+Complete. Flips: 342053
+Time: 28.516718ms
+Complete. Flips: 348982
+Time: 40.253993ms
+Complete. Flips: 390721
+Time: 175.535269ms
+Complete. Flips: 395171
+Time: 19.397121ms
+Complete. Flips: 404228
+Time: 36.998291ms
+Complete. Flips: 405918
+Time: 7.319698ms
+Complete. Flips: 407684
+Time: 7.740043ms
+Complete. Flips: 411014
+Time: 15.765321ms
+Complete. Flips: 442040
+Time: 126.87753ms
+Complete. Flips: 445379
+Time: 13.47515ms
+Complete. Flips: 451941
+Time: 26.862201ms
+Complete. Flips: 453725
+Time: 7.905179ms
+Complete. Flips: 464567
+Time: 43.148608ms
+Complete. Flips: 466481
+Time: 9.759597ms
+Complete. Flips: 477533
+Time: 46.066531ms
+Complete. Flips: 524613
+Time: 194.603698ms
+Complete. Flips: 534160
+Time: 39.489154ms
+Complete. Flips: 544602
+Time: 42.269201ms
+Complete. Flips: 555387
+Time: 43.062484ms
+Complete. Flips: 569472
+Time: 55.536154ms
+Complete. Flips: 598914
+Time: 118.3604ms
+Complete. Flips: 607665
+Time: 34.849948ms
+Complete. Flips: 648090
+Time: 162.989698ms
+Complete. Flips: 666746
+Time: 74.74799ms
+Complete. Flips: 675525
+Time: 35.763725ms
+Complete. Flips: 697694
+Time: 89.31746ms
+Complete. Flips: 701249
+Time: 15.590704ms
+Complete. Flips: 711432
+Time: 41.808164ms
+Complete. Flips: 730570
+Time: 76.821273ms
+Complete. Flips: 733745
+Time: 13.69915ms
+Complete. Flips: 741079
+Time: 31.266346ms
+Complete. Flips: 746275
+Time: 20.967094ms
+Complete. Flips: 749642
+Time: 14.366408ms
+Complete. Flips: 756623
+Time: 29.656075ms
+Complete. Flips: 761536
+Time: 20.541613ms
+Complete. Flips: 800560
+Time: 157.750789ms
+Complete. Flips: 804438
+Time: 15.565025ms
+Complete. Flips: 818484
+Time: 57.652893ms
+Complete. Flips: 821448
+Time: 13.027151ms
+Complete. Flips: 833591
+Time: 48.514332ms
+Complete. Flips: 847848
+Time: 59.064842ms
+Complete. Flips: 851329
+Time: 14.222607ms
+Complete. Flips: 852902
+Time: 6.768192ms
+Complete. Flips: 854912
+Time: 8.354759ms
+Complete. Flips: 858831
+Time: 16.876234ms
+Complete. Flips: 860535
+Time: 10.050757ms
+Complete. Flips: 872100
+Time: 54.046772ms
+Complete. Flips: 876029
+Time: 20.427836ms
+Complete. Flips: 882837
+Time: 36.512366ms
+Complete. Flips: 892348
+Time: 43.757793ms
+Complete. Flips: 895968
+Time: 15.559889ms
+Complete. Flips: 909857
+Time: 56.562524ms
+Complete. Flips: 914689
+Time: 20.846601ms
+Complete. Flips: 918205
+Time: 14.670606ms
+Complete. Flips: 920101
+Time: 8.618264ms
+Complete. Flips: 930734
+Time: 45.069792ms
+Complete. Flips: 934515
+Time: 16.123247ms
+Complete. Flips: 946661
+Time: 48.777838ms
+Complete. Flips: 953663
+Time: 28.255583ms
+Complete. Flips: 983180
+Time: 122.030521ms
+Complete. Flips: 985203
+Time: 8.615104ms
+Complete. Flips: 999447
+Time: 58.689139ms
+Complete. Flips: 1001428
+Time: 8.089673ms
+Complete. Flips: 1021015
+Time: 77.235692ms
+Complete. Flips: 1024253
+Time: 13.968977ms
+Complete. Flips: 1045681
+Time: 85.660377ms
+Complete. Flips: 1051025
+Time: 21.247193ms
+Complete. Flips: 1053081
+Time: 8.887301ms
+Complete. Flips: 1055027
+Time: 7.873969ms
+Complete. Flips: 1077877
+Time: 93.14679ms
+Complete. Flips: 1086139
+Time: 32.981703ms
+Complete. Flips: 1095038
+Time: 35.890935ms
+Complete. Flips: 1107324
+Time: 49.23848ms
+Complete. Flips: 1115576
+Time: 36.573206ms
+
+Average flips over 100 trials: 11155
+Average time taken over 100 trials: 49.236800680000016ms
