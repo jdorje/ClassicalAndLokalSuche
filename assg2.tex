@@ -30,7 +30,34 @@ Kostas Bekris\\
 
 \item Problem 1
 \begin{enumerate}
-\item (Program results)
+\item Statistics for the program are posted alongside this .pdf as .txt files. The 20-variable .txt also contains a link to the program's github.
+\item 20 Variables
+\begin{enumerate}
+\item Average flips over 100 trials: 651
+\item Average time taken over 100 trials: 3.24529519ms
+\end{enumerate}
+\item 50 Variables
+\begin{enumerate}
+\item Average flips over 100 trials: 11155
+\item Average time taken over 100 trials: 49.23680068ms
+\end{enumerate}
+\item 75 Variables
+\begin{enumerate}
+\item Average flips over 100 trials: 12582
+\item Average time taken over 100 trials: 82.21522391ms
+\end{enumerate}
+\item 100 Variables
+\begin{enumerate}
+\item Average flips over 100 trials: 392280
+\item Average time taken over 100 trials: 3962.0381258299985ms
+\end{enumerate}
+\item There are two notable 'jumps' made in these calculations. Between 20 and 50, and 75 to 100.
+\item There is a clear relationship between the number of variables and clauses in 3-CNF SAT problems.
+\begin{enumerate}
+\item More specifically, the number of different variables to track in each clause increases the flips required to satisfy all clauses.
+\item Because of this, it takes more time. While the difference between 50 and 75 is relatively 'negligible', with only time doubling, the difference between 75 and 100 is far more significant.
+\item 20 to 50 also indicates a rapid ramp-up, suggesting an exponential relationship that stabilizes at around 50-75, before increasing very rapidly at 100.
+\end{enumerate} 
 \end{enumerate}
 
 \item Problem 2
@@ -154,4 +181,3 @@ Kostas Bekris\\
 
 \end{enumerate}
 \end{document}
-
